@@ -1,0 +1,88 @@
+body,
+:not(.matrix) {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 1);
+  font-family: 'Courier';
+  color: #0D0;
+  font-size: 12pt;
+  line-height: 10pt;
+  z-index: -1;
+
+}
+
+body {
+  justify-content: center;
+}
+
+.digitizer {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  font-size:5px;
+  line-height: 3pt;
+  position: absolute;
+  z-index: 10;
+  height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top:10%;
+
+}
+
+.matrix {
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 100%, rgba(0, 0, 0, 0) 0%);
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 2em;
+  opacity: .9;
+
+
+
+}
+
+canvas {
+  width: auto;
+  height: auto;
+}
+
+.logoText {
+  display: flex;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 10px;
+  height: 1em;
+
+  text-align: center;
+
+}
+
+.logoText h1 {
+  font-size: 2em;
+}
+
+.matrix {
+  z-index: -10;
+  background-color: black;
+
+}
+
+#matrixWrapper {
+  height: inherit;
+  z-index: 0;
+  background-color: black;
+  position: absolute;
+
+
+}
